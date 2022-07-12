@@ -19,6 +19,56 @@ class Car : Vehicle  // derived class (child)
 
 class Program {
   
+static void FirstWorker()
+{
+    //This will run without any rule
+    Console.WriteLine("First worker started!");
+
+    //The rule for the following block is: only enter
+    //when myLock is not in use, otherwise wait
+    lock (myLock)
+    {
+        Console.WriteLine("First worker entered the critical block!");
+        Thread.Sleep(1000);
+        Console.WriteLine("First worker left the critical block!");
+    }
+
+    //Finally print this
+    Console.WriteLine("First worker completed!");
+}
+  static void SecondWorker()
+{
+    Console.WriteLine("Second worker started!");
+
+    //The rule for the following block is: only enter
+    //when myLock is not in use, otherwise wait
+    lock (myLock)
+    {
+        Console.WriteLine("Second worker entered the critical block!");
+        Thread.Sleep(5000);
+        Console.WriteLine("Second worker left the critical block!");
+    }
+
+    //Finally print this
+    Console.WriteLine("Second worker completed!");
+}
+  public void MyTaskAsync(string[] files)
+{
+  MyTaskWorkerDelegate worker = new MyTaskWorkerDelegate(MyTaskWorker);
+  AsyncCallback completedCallback = new AsyncCallback(MyTaskCompletedCallback);
+
+  lock (_sync)
+  {
+    if (_myTaskIsRunning)
+      throw new InvalidOperationException("The control is currently busy.");
+
+    AsyncOperation async = AsyncOperationManager.CreateOperation(null);
+    worker.BeginInvoke(files, completedCallback, async);
+    _myTaskIsRunning = true;
+  }
+}
+
+private readonly object _sync = new object();
   
     public static int Fibonacci(int n) {
     int a = 0;
