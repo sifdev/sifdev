@@ -1,11 +1,7 @@
 using System;
 
-class dick{
 
 
-
-
-}
 abstract class Animal
 {
   // Abstract method (does not have a body)
