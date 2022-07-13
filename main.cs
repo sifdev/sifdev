@@ -1,7 +1,26 @@
 using System;
 
 
+abstract class Animal
+{
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep()
+  {
+    Console.WriteLine("Zzz");
+  }
+}
 
+// Derived class (inherit from Animal)
+class Pig : Animal
+{
+  public override void animalSound()
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
 class Vehicle  // base class (parent) 
 {
   public string brand = "Ford";  // Vehicle field
@@ -90,6 +109,9 @@ float f = 156454;
     Console.WriteLine(m);
     Console.WriteLine(f);
       Car myCar = new Car();
+        Pig myPig = new Pig(); // Create a Pig object
+    myPig.animalSound();  // Call the abstract method
+    myPig.sleep();  // Call the regular method
 
     // Call the honk() method (From the Vehicle class) on the myCar object
     myCar.honk();
