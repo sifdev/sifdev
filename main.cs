@@ -39,6 +39,26 @@ int hghgh = 1518561685168548964896489489849489;
   }
 
 }
+public class A
+{
+    private int _value = 10;
+
+    public class B : A
+    {
+        public int GetValue()
+        {
+            return _value;
+        }
+    }
+}
+
+public class C : A
+{
+        public int GetValue()
+       {
+           return _value;
+       }
+}
 
 abstract class Animal
 {
@@ -268,6 +288,19 @@ Console.WriteLine("It is awesome!");Console.WriteLine("Hello World!");
 Console.WriteLine("I am Learning C#");
 Console.WriteLine("It is awesome!");Console.WriteLine("Hello World!");
 Console.WriteLine("I am Learning C#");
+string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+int[] myNum = {10, 20, 30, 40};
+
+      double myDouble = 9.78;
+      int myInt = (int) myDouble;  // Manual casting: double to int
+
+      Console.WriteLine(myDouble);
+      Console.WriteLine(myInt);
+      
+  // Manual casting: double to int
+
+      Console.WriteLine(myDouble);
+      Console.WriteLine(myInt);
 Console.WriteLine("It is awesome!");Console.WriteLine("Hello World!");
 Console.WriteLine("I am Learning C#");
 Console.WriteLine("It is awesome!");Console.WriteLine("Hello World!");
