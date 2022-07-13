@@ -59,7 +59,34 @@ public class C : A
            return _value;
        }
 }
-
+public class h : A
+{
+        public int GetValu()
+       {
+           return _value;
+       }
+}
+public class p : A
+{
+        public int GetValue()
+       {
+           return _value;
+       }
+}
+public class j : A
+{
+        public int GetValue()
+       {
+           return _value;
+       }
+}
+public class e : A
+{
+        public int GetValue()
+       {
+           return _value;
+       }
+}
 abstract class Animal
 {
   // Abstract method (does not have a body)
