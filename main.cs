@@ -1,5 +1,24 @@
 using System;
+class dgughr{
+ public void mm(){
+      Console.WriteLine("Hello World!");  
+        Console.WriteLine("Hello World!");  
+        Console.WriteLine("Hello World!");  
+ }
+string jk = "jkrfozgrbogrziujbvigrzeugvzrfgigegzrgybigzrfiybrfzybigzrfuiybzrgybigzrybigrzybigzruybizrgybigzrybybgzreiybzegriybzgebyrgzeybizgybiybizegrybizgeybigzybizegybi";
+int hgh = 1518561685168548964896489489849489;
+  int yfre= 41678978946123;
+  public void sx(){
+  
+       Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");       Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");       Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");  
+  }
 
+}
 class dick{
  public void t(){
       Console.WriteLine("Hello World!");  
