@@ -37,6 +37,45 @@ class Car : Vehicle  // derived class (child)
 
 
 class Program {
+  using System;
+
+
+abstract class Animal
+{
+  // Abstract method (does not have a body)
+  public abstract void animalSound();
+  // Regular method
+  public void sleep()
+  {
+    Console.WriteLine("Zzz");
+  }
+}
+
+// Derived class (inherit from Animal)
+class Pig : Animal
+{
+  public override void animalSound()
+  {
+    // The body of animalSound() is provided here
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+class Vehicle  // base class (parent) 
+{
+  public string brand = "Ford";  // Vehicle field
+  public void honk()             // Vehicle method 
+  {                    
+    Console.WriteLine("Tuut, tuut!");
+  }
+}
+
+class Car : Vehicle  // derived class (child)
+{
+  public string modelName = "Mustang";  // Car field
+}
+
+
+class Program {
   
 static void FirstWorker()
 {
@@ -54,6 +93,15 @@ static void FirstWorker()
 
     //Finally print this
     Console.WriteLine("First worker completed!");
+}
+static int PlusMethod(int x, int y)
+{
+  return x + y;
+}
+
+static double PlusMethod(double x, double y)
+{
+  return x + y;
 }
   static void SecondWorker()
 {
@@ -100,8 +148,21 @@ private readonly object _sync = new object();
     return a;
   }
   public static void Main (string[] args) {
-
+string fhif = "bjkfbko k ogrjo ogjog jogjog jzsropg jpizrgmIGA%ZRGIP  ipzrigurbgniizro rgh uizogrfuy bnzldjf ghuzdu ryhghbdjkzr ydjzl dzrgh gzd fizrhf bziyer opp zgherf dhzry iz dz ru hdzir yfgdzi yzfg zyige gyz yz gefyzg iy gygfzui yg'eyz gyzegiy gzi yg ig iyzegfuozg gfurzh ";
     long m= 92337203685587;
+    try
+{
+  int[] myNumbers = {1, 2, 3};
+  Console.WriteLine(myNumbers[10]);
+}
+catch (Exception e)
+{
+  Console.WriteLine("Something went wrong.");
+}
+finally
+{
+  Console.WriteLine("The 'try catch' is finished.");
+}
 
     string s = "fd hd fh huu u dfu ejh dsu edd jv u nferjk iiifghebh hdfhuef u bjjjeufl hfifeuioe hey dfjjj jedfg nqieéab oia ";
 float f = 156454;
@@ -121,6 +182,10 @@ float f = 156454;
     Console.WriteLine(myCar.brand + " " + myCar.modelName);
     for (int i = 0; i < 15; i++) {
       Console.WriteLine(Fibonacci(i));
+        int myNum1 = PlusMethod(8, 5);
+  double myNum2 = PlusMethod(4.3, 6.26);
+  Console.WriteLine("Int: " + myNum1);
+  Console.WriteLine("Double: " + myNum2);
     }
   }
     }
