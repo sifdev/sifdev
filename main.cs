@@ -76,7 +76,7 @@ class Car : Vehicle  // derived class (child)
 
 
 class Program {
-  
+  string txt = "Hello World";
 static void FirstWorker()
 {
     //This will run without any rule
@@ -254,6 +254,8 @@ Console.WriteLine("I am Learning C#");
 Console.WriteLine("It is awesome!");Console.WriteLine("Hello World!");
 Console.WriteLine("I am Learning C#");
 Console.WriteLine("It is awesome!");
+Console.WriteLine(txt.ToUpper());   // Outputs "HELLO WORLD"
+Console.WriteLine(txt.ToLower());   // Outputs "hello world"
     }
   }
     }
