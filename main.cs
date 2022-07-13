@@ -1,6 +1,25 @@
 using System;
 
+class dick{
+ public void t(){
+      Console.WriteLine("Hello World!");  
+        Console.WriteLine("Hello World!");  
+        Console.WriteLine("Hello World!");  
+ }
+string dijk = "jkrfozgrbogrziujbvigrzeugvzrfgigegzrgybigzrfiybrfzybigzrfuiybzrgybigzrybigrzybigzruybizrgybigzrybybgzreiybzegriybzgebyrgzeybizgybiybizegrybizgeybigzybizegybi";
+int hghgh = 1518561685168548964896489489849489;
+  int yhfre= 41678978946123;
+  public void ssx(){
+  
+       Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");       Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");       Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");  
+         Console.WriteLine("Hello World!");  
+  }
 
+}
 
 abstract class Animal
 {
